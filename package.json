@@ -1,0 +1,27 @@
+{
+  "name": "BrainTube",
+  "version": "1.0.0",
+  "description": "An app that generates quizzes from YouTube videos.",
+  "scripts": {
+    "install:all": "npm install && npm run install:frontend && npm run install:backend",
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "install:frontend": "cd frontend && npm install",
+    "install:backend": "cd backend && npm install",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run start"
+  },
+  "dependencies": {
+    "concurrently": "^6.0.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "quiz",
+    "youtube",
+    "video",
+    "generator"
+  ],
+  "author": "GitHub Copilot",
+  "license": "MIT"
+}
